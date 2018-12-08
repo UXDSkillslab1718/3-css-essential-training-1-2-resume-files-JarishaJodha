@@ -1,3 +1,46 @@
+/* Color Scheme
+#E4E8D7 - white
+#BDC2BF - silver
+#90A57A - green
+#272B1D - darkgreen
+#E5D197  - yellowish
+*/
+
+
+/* Global styles
+-------------*/
 body{
-    background: #a2dba2;
+} 
+a{
+    color: #E5D197;
+}
+a:hover{
+    color: whitesmoke;
+}
+
+
+/* Header and Footer
+------------------*/
+header, footer {
+    background: #272B1D;
+    color: #E4E8D7;
+}
+header h1, header h2 {
+    color: #E5D197;
+}
+
+
+/* Work experience
+------------------*/
+.work {
+    background:#E4E8D7;
+}
+
+
+
+
+/* Education
+------------------*/
+.education{
+    background: #BDC2BF;
 }
