@@ -9,8 +9,32 @@
 
 /* Global styles
 -------------*/
+html {
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+.content-wrap{
+    max-width: 950px;
+    margin: 0 auto;
+    padding: 50px;
+    overflow: auto;
+}
+.column-narrow{
+    width: 30%;
+    float:left;
+    min-height: 200px;
+}
+.column-wide{
+    width: 70%;
+    float: left;
+    padding-left: 20px;
+    min-height: 200px;
+}
 body{
     font-family: 'Open Sans', sans-serif;
+    margin: 0;
 } 
 h1,h2 {
     font-family: 'Crimson Text', serif;
@@ -21,6 +45,7 @@ font-size: 80px;
 }
 h2 {
     font-size: 40px; 
+    margin-top: 0;
 }
 a{
     color: #E5D197;
@@ -36,8 +61,27 @@ header, footer {
     background: #272B1D;
     color: #E4E8D7;
 }
+/*Header*/
+.profile-img{
+    border-radius: 50%;
+}
+/*
+header{
+    text-align: center;
+}
+*/
 header h1, header h2 {
     color: #E5D197;
+    margin:0;
+}
+
+/*footer*/
+footer{
+    text-align: center;
+}
+.contact a {
+    padding: 10px;
+    display: inline-block;
 }
 
 
