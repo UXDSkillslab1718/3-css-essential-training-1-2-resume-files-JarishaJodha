@@ -4,6 +4,7 @@
 #90A57A - green
 #272B1D - darkgreen
 #E5D197  - yellowish
+#F79351 - orange
 */
 
 
@@ -18,7 +19,7 @@ html {
 .content-wrap{
     max-width: 950px;
     margin: 0 auto;
-    padding: 50px;
+    padding: 60px 50px;
     overflow: auto;
 }
 .column-narrow{
@@ -37,7 +38,7 @@ body{
     margin: 0;
 } 
 h1,h2 {
-    font-family: 'Crimson Text', serif;
+    font-family: 'Caveat', serif;
     font-weight: 400;
 }
 h1{ 
@@ -59,6 +60,12 @@ a:hover{
 .uppercase{
     text-transform: uppercase;
 }
+.btn{
+    text-decoration: none;
+    background: none;
+    color: #F79351;
+    display: inline-block;
+}
 
 
 /* Header and Footer
@@ -68,9 +75,19 @@ header, footer {
     color: #E4E8D7;
 }
 /*Header*/
+header{
+    padding-top: 50px;
+/*  position: relative;*/
+}
 .profile-img{
     border-radius: 50%;
 }
+/*.download {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+*/
+
 /*
 header{
     text-align: center;
@@ -89,6 +106,25 @@ footer{
     padding: 10px;
     display: inline-block;
 }
+
+/* Navigation
+------------------*/
+nav{
+    text-align:center;
+    background: rgba(39, 43, 29, 0.44);
+    position: fixed;
+    top:0;
+    width:100%;
+}
+nav a {
+    display: inline-block;
+    padding:15px 40px;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+
 
 
 /* Work experience
@@ -113,13 +149,32 @@ h3~p {
 /* Education
 ------------------*/
 .education{
-    background: #BDC2BF;
-}
+/*    background: rgb(189, 194, 191);*/
+    
+    background-image: linear-gradient(rgba(189, 194, 191,1), rgba(189, 194, 191,0.7)),
+        url("IMG-20180813-WA0057.jpg");
+    background-attachment: fixed;
+        }
+    
 p + h3 {
-    margin-top: 30px;
+    margin-top: 0;
+    padding-top: 30px;
 }
 
 
+/*
+Float is good for flexible and variable content such as image, side-bar or main content
+
+display is for aligning page component, and elements
+
+position is for positioning elements relative to other element or outside the document flow or to a speicific spot
+
+Can't be used all together. 
+
+
+stacking context: when its nested they stack on top of each other
+
+*/
 
 
 
