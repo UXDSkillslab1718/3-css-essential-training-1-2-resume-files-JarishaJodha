@@ -24,13 +24,13 @@ html {
 .column-narrow{
     width: 30%;
     float:left;
-    min-height: 200px;
+/*    min-height: 200px;*/
 }
 .column-wide{
     width: 70%;
     float: left;
     padding-left: 20px;
-    min-height: 200px;
+/*    min-height: 200px;*/
 }
 body{
     font-family: 'Open Sans', sans-serif;
@@ -47,11 +47,17 @@ h2 {
     font-size: 40px; 
     margin-top: 0;
 }
+h3{
+    margin:0;
+}
 a{
     color: #E5D197;
 }
 a:hover{
     color: whitesmoke;
+}
+.uppercase{
+    text-transform: uppercase;
 }
 
 
@@ -90,6 +96,16 @@ footer{
 .work {
     background:#E4E8D7;
 }
+h3~p {
+    margin:0;
+}
+.job-description p:first-of-type{
+    margin-top: 0;
+}
+
+.job-description{
+    margin-bottom: 30px;
+}
 
 
 
@@ -99,3 +115,16 @@ footer{
 .education{
     background: #BDC2BF;
 }
+p + h3 {
+    margin-top: 30px;
+}
+
+
+
+
+
+
+
+
+
+
